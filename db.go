@@ -14,7 +14,7 @@ var MongoDBClient *mongo.Client
 
 // ConnectDatabase is used to connect the MongoDB database
 func ConnectDatabase() {
-	log.Println("Database connecting...")
+	log.Println("Database connecting.")
 	// Set client options
 	clientOptions := options.Client().ApplyURI(os.Getenv("mongodb://127.0.0.1:27017"))
 
